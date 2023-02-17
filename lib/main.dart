@@ -98,9 +98,9 @@ class MyHome extends StatelessWidget {
         centerTitle: false,
       ),
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: const [
+            colors: [
               Color(0xFFFFFFFF),
               Color(0xFFF9F9F9),
               Color(0xFFF2F3F2),
