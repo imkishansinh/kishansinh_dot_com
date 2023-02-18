@@ -32,55 +32,57 @@ class AppsListPage extends StatelessWidget {
           ),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Wrap(
-          direction: Axis.horizontal,
-          children: [
-            AppListTile(
-              onTap: () {},
-              imageURL:
-                  'https://play-lh.googleusercontent.com/FbL1q4mUxlAe8DeMAiDxUc3yB1zN4F6YQlZXFVbTKMIzb5F0lGriEr-Slzz-6KAKhBA=w240-h480-rw',
-              title: 'Ketto',
-              subTitle: 'Monthly giving program',
-              description:
-                  'India\'s leading crowdfunding platform for donating to needy people. The application is about the explore different kinds of causes and campaigns and subscribing to them for a monthly donation or one-time donation.',
-              androidUrl:
-                  'https://play.google.com/store/apps/details?id=org.ketto.sip',
-              iosUrl: 'https://apps.apple.com/us/app/ketto/id1582755806',
-            ),
-            const SizedBox(
-              height: 21,
-            ),
-            AppListTile(
-              onTap: () {},
-              imageURL:
-                  'https://play-lh.googleusercontent.com/t9c1tlraI-j3JbX4RLF7uWwv-MTbqyh7UyNhmneeknh_BexE3hy93lFgPZEp8KRzo0M=w240-h480-rw',
-              title: 'Healthnest',
-              subTitle: 'A Social App for Health',
-              description:
-                  'A Social APP for Health[Community driven]. Mainly it is providing a feed kind of feature, 101 chat with experts and community members, Custom services by the community, and much more support from community owners.',
-              androidUrl:
-                  'https://play.google.com/store/apps/details?id=in.healthnest',
-              iosUrl: 'https://apps.apple.com/us/app/healthnest/id1510561751',
-            ),
-            const SizedBox(
-              height: 21,
-            ),
-            AppListTile(
-              onTap: () {},
-              imageURL:
-                  'https://play-lh.googleusercontent.com/aCJgJdlBLykzYnqF1JzihempAlv8rrH7zpv-jy1LoGHtezNhgYDIFTHg1TQU9KdC1PME=w240-h480-rw',
-              title: 'Ketto for Fundraiser',
-              subTitle: 'Manage your fundraisers on go!',
-              description:
-                  'One-of-a-kind application designed to help people manage their campaigns. You can start a fundraiser on Ketto and manage it free on the app from anywhere, at any time, with just a few clicks. It\'s faster, convenient & easy to navigate - so let\'s get you going!',
-              androidUrl:
-                  'https://play.google.com/store/apps/details?id=org.ketto.mcd',
-              iosUrl:
-                  'https://apps.apple.com/us/app/ketto-for-fundraiser/id1602237545',
-            ),
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Wrap(
+            direction: Axis.horizontal,
+            children: [
+              AppListTile(
+                onTap: () {},
+                imageURL:
+                    'https://play-lh.googleusercontent.com/FbL1q4mUxlAe8DeMAiDxUc3yB1zN4F6YQlZXFVbTKMIzb5F0lGriEr-Slzz-6KAKhBA=w240-h480-rw',
+                title: 'Ketto',
+                subTitle: 'Monthly giving program',
+                description:
+                    'India\'s leading crowdfunding platform for donating to needy people. The application is about the explore different kinds of causes and campaigns and subscribing to them for a monthly donation or one-time donation.',
+                androidUrl:
+                    'https://play.google.com/store/apps/details?id=org.ketto.sip',
+                iosUrl: 'https://apps.apple.com/us/app/ketto/id1582755806',
+              ),
+              const SizedBox(
+                height: 21,
+              ),
+              AppListTile(
+                onTap: () {},
+                imageURL:
+                    'https://play-lh.googleusercontent.com/t9c1tlraI-j3JbX4RLF7uWwv-MTbqyh7UyNhmneeknh_BexE3hy93lFgPZEp8KRzo0M=w240-h480-rw',
+                title: 'Healthnest',
+                subTitle: 'A Social App for Health',
+                description:
+                    'A Social APP for Health[Community driven]. Mainly it is providing a feed kind of feature, 101 chat with experts and community members, Custom services by the community, and much more support from community owners.',
+                androidUrl:
+                    'https://play.google.com/store/apps/details?id=in.healthnest',
+                iosUrl: 'https://apps.apple.com/us/app/healthnest/id1510561751',
+              ),
+              const SizedBox(
+                height: 21,
+              ),
+              AppListTile(
+                onTap: () {},
+                imageURL:
+                    'https://play-lh.googleusercontent.com/aCJgJdlBLykzYnqF1JzihempAlv8rrH7zpv-jy1LoGHtezNhgYDIFTHg1TQU9KdC1PME=w240-h480-rw',
+                title: 'Ketto for Fundraiser',
+                subTitle: 'Manage your fundraisers on go!',
+                description:
+                    'One-of-a-kind application designed to help people manage their campaigns. You can start a fundraiser on Ketto and manage it free on the app from anywhere, at any time, with just a few clicks. It\'s faster, convenient & easy to navigate - so let\'s get you going!',
+                androidUrl:
+                    'https://play.google.com/store/apps/details?id=org.ketto.mcd',
+                iosUrl:
+                    'https://apps.apple.com/us/app/ketto-for-fundraiser/id1602237545',
+              ),
+            ],
+          ),
         ),
       ),
     );
