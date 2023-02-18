@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:kishansinh_dot_com/apps_list.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
@@ -160,6 +161,20 @@ class MyHome extends StatelessWidget {
                       width: 12,
                     ),
                     InkWell(
+                      onTap: () {
+                        final Uri _blogUrl = Uri.parse(
+                          'https://github.com/imkishansinh',
+                        );
+                        launchUrl(_blogUrl);
+                      },
+                      child: const FaIcon(
+                        FontAwesomeIcons.github,
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 12,
+                    ),
+                    InkWell(
                         onTap: () {
                           final Uri _blogUrl = Uri.parse(
                             'https://www.linkedin.com/in/kishansinhparmar/',
@@ -195,8 +210,37 @@ class MyHome extends StatelessWidget {
                     ),
                   ],
                 ),
-                // const Spacer(),
-                // const Flexible(child: const Text('Build with flutter')),
+                const SizedBox(
+                  height: 21,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const AppsListPage(),
+                      ),
+                    );
+                  },
+                  child: RichText(
+                    text: const TextSpan(
+                        text: 'Latest app work',
+                        style: TextStyle(
+                          color: Colors.black87,
+                          fontSize: 18,
+                          decoration: TextDecoration.underline,
+                        ),
+                        children: [
+                          WidgetSpan(
+                            child: SizedBox(
+                              width: 4,
+                            ),
+                          ),
+                          WidgetSpan(
+                            child: FaIcon(FontAwesomeIcons.mobileRetro),
+                          ),
+                        ]),
+                  ),
+                ),
               ],
             ),
           ),
